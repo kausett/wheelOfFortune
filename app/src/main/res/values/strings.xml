@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SDPGuessIt</string>
+    <string name="welcomeText">Welcome to Wheel of Fortune</string>
+    <string name="signInBackground">signInBackground</string>
+    <string name="account">Account</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="back"><![CDATA[< Back]]></string>
+    <string name="create_puzzle">Create Puzzle phrase</string>
+    <string name="create_tournament">Create Tournament</string>
+    <string name="solve_random_puzzel">Solve Random Puzzel</string>
+    <string name="continue_tournament">Continue Tournament</string>
+    <string name="join_tournament">Join Tournament</string>
+    <string name="puzzle_phrase">Enter Puzzle Phrase</string>
+    <string name="maxNum">Enter Max wrong guess between 1-10</string>
+</resources>

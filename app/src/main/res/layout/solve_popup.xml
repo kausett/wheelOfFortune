@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:layout_height="250dp"
+    android:background="@mipmap/logincontainer"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/Xsolve"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:background="@mipmap/logincontainer"
+        android:textColor="@color/colorGold"
+        android:fontFamily="@font/zorque"
+        android:textSize="18sp"
+        android:layout_gravity="end"
+        android:layout_marginRight="15dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solve The puzzle"
+            android:fontFamily="@font/zorque"
+            android:textColor="@color/colorGold"
+            android:textSize="25sp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/solvedPuzzleAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:background="@color/colorGold"
+            android:height="45sp"
+            android:hint="Type the solved puzzle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnCancleSolve"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="Cancle"
+                android:layout_marginRight="10sp"
+                android:fontFamily="@font/zorque"
+                android:background="@color/colorGold"/>
+
+            <Button
+                android:id="@+id/btnSolvePuzzle"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="Solve"
+                android:fontFamily="@font/zorque"
+                android:background="@color/colorGold"/>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

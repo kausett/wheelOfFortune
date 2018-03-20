@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.sdpguessit.CreatePuzzle"
+    android:background="@mipmap/wofbackground">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="222dp"
+        android:layout_height="187dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:src="@mipmap/woflogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="352dp"
+        android:layout_height="328dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logincontainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutCreateField"
+        android:layout_width="300dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/imageView11"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/headerCreatePuzzle">
+
+        <EditText
+            android:id="@+id/txtCreatePuzzle"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/colorGold"
+            android:hint="@string/puzzle_phrase"
+            android:padding="5dp"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <EditText
+            android:id="@+id/txtMaxGuessNumber"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10sp"
+            android:background="@color/colorGold"
+            android:ems="10"
+            android:hint="@string/maxNum"
+            android:inputType="number"
+            android:padding="5sp"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="432dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/imageView11"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCreateField">
+
+        <Button
+            android:id="@+id/btnCreatePuzzlePhrase"
+            android:layout_width="147dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="20sp"
+            android:background="@color/colorGold"
+            android:fontFamily="@font/zorque"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btnCancelCreatePuzzle"
+            android:layout_width="147dp"
+            android:layout_height="44dp"
+            android:layout_gravity=""
+            android:background="@color/colorGold"
+            android:fontFamily="@font/zorque"
+            android:text="Cancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headerCreatePuzzle"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/imageView11"
+        app:layout_constraintEnd_toEndOf="@id/imageView11"
+        app:layout_constraintTop_toTopOf="@id/imageView11">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/zorque"
+            android:text="Create Puzzle"
+            android:textColor="@color/colorGold"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="315dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
